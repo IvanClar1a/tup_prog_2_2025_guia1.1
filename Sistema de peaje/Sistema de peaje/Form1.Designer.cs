@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnVerResumen = new System.Windows.Forms.Button();
             this.btnRegistrarPeaje = new System.Windows.Forms.Button();
+            this.lsbVerResumen = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(27, 38);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(238, 280);
-            this.textBox1.TabIndex = 0;
             // 
             // btnVerResumen
             // 
-            this.btnVerResumen.Location = new System.Drawing.Point(325, 139);
+            this.btnVerResumen.Location = new System.Drawing.Point(412, 137);
             this.btnVerResumen.Name = "btnVerResumen";
             this.btnVerResumen.Size = new System.Drawing.Size(138, 42);
             this.btnVerResumen.TabIndex = 1;
@@ -53,7 +45,7 @@
             // 
             // btnRegistrarPeaje
             // 
-            this.btnRegistrarPeaje.Location = new System.Drawing.Point(325, 47);
+            this.btnRegistrarPeaje.Location = new System.Drawing.Point(412, 48);
             this.btnRegistrarPeaje.Name = "btnRegistrarPeaje";
             this.btnRegistrarPeaje.Size = new System.Drawing.Size(138, 46);
             this.btnRegistrarPeaje.TabIndex = 2;
@@ -61,26 +53,32 @@
             this.btnRegistrarPeaje.UseVisualStyleBackColor = true;
             this.btnRegistrarPeaje.Click += new System.EventHandler(this.btnRegistrarPeaje_Click);
             // 
+            // lsbVerResumen
+            // 
+            this.lsbVerResumen.FormattingEnabled = true;
+            this.lsbVerResumen.Location = new System.Drawing.Point(27, 39);
+            this.lsbVerResumen.Name = "lsbVerResumen";
+            this.lsbVerResumen.Size = new System.Drawing.Size(379, 264);
+            this.lsbVerResumen.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 358);
+            this.ClientSize = new System.Drawing.Size(674, 358);
+            this.Controls.Add(this.lsbVerResumen);
             this.Controls.Add(this.btnRegistrarPeaje);
             this.Controls.Add(this.btnVerResumen);
-            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnVerResumen;
         private System.Windows.Forms.Button btnRegistrarPeaje;
+        public System.Windows.Forms.ListBox lsbVerResumen;
     }
 }
 
